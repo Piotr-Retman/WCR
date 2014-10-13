@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:text="@string/chooser"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#fff" />
+
+    <CheckBox
+        android:id="@+id/formula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/skiJump"
+        android:layout_alignLeft="@+id/figureSkat"
+        android:text="@string/formula"
+        android:textColor="#fff" />
+
+    <CheckBox
+        android:id="@+id/cycling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="35dp"
+        android:text="@string/cycling"
+        android:textColor="#fff" />
+
+    <CheckBox
+        android:id="@+id/tennis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/cycling"
+        android:text="@string/tennis"
+        android:textColor="#fff" />
+
+    <CheckBox
+        android:id="@+id/soccer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tennis"
+        android:text="@string/soccer"
+        android:textColor="#fff" />
+
+    <CheckBox
+        android:id="@+id/volleyball"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/soccer"
+        android:text="@string/volleyball"
+        android:textColor="#fff" />
+
+    <CheckBox
+        android:id="@+id/tableTennis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/volleyball"
+        android:text="@string/table_tennis"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/addToReminder"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tableTennis"
+        android:layout_marginTop="21dp"
+        android:text="@string/adder"
+        android:textColor="#fff" />
+
+    <CheckBox
+        android:id="@+id/handball"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/swimming"
+        android:layout_alignLeft="@+id/formula"
+        android:text="@string/handball"
+        android:textColor="#fff" />
+
+    <CheckBox
+        android:id="@+id/figureSkat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/volleyball"
+        android:text="@string/figure_skating"
+        android:textColor="#fff" />
+
+    <CheckBox
+        android:id="@+id/skiJump"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/figureSkat"
+        android:layout_below="@+id/soccer"
+        android:text="@string/ski_jump"
+        android:textColor="#fff" />
+
+    <CheckBox
+        android:id="@+id/swimming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/formula"
+        android:layout_below="@+id/cycling"
+        android:text="@string/swim"
+        android:textColor="#fff" />
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <Button
+        android:id="@+id/learnMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/chooseGame"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/chooseGame"
+        android:layout_marginTop="138dp"
+        android:text="@string/history"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/chooseGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/learnMore"
+        android:layout_centerHorizontal="true"
+        android:text="@string/choose_game"
+        android:textColor="#fff" 
+        android:onClick="onClick"
+        />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/learnMore"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/learnMore"
+        android:layout_marginTop="41dp"
+        android:gravity="center"
+        android:text="@string/landVersion"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/addToReminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/chooseGame"
+        android:layout_alignRight="@+id/chooseGame"
+        android:layout_below="@+id/chooseGame"
+        android:text="@string/adder"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="29dp"
+        android:text="@string/version"
+        android:textColor="#fff" />
+
+</RelativeLayout>
