@@ -18,65 +18,90 @@ import android.widget.ListView;
 
 import com.meximas.wcr.sports.Sport;
 
-public class Events extends Activity {
+public class Events extends Activity
+{
 
 	Sport sport = new Sport();
 	Set<String> choosedByUserEvents = new HashSet<String>();
 
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
+	protected void onCreate(Bundle savedInstanceState)
+	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_events);
-		final ListView listView = (ListView) findViewById(R.id.listView1);
+		setTitle("World Championships Reminder");
+		final ListView listView = (ListView) findViewById(R.id.list_time);
 		listView.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
-		listView.setBackgroundColor(Color.GRAY);
 		Intent intent = getIntent();
 		Bundle bundle = intent.getExtras();
 		List<String> eventsToDisplay = bundle.getStringArrayList("eventsToDisplay");
 		int size = eventsToDisplay.size();
 
-		ArrayAdapter<String> adapter = new ArrayAdapter<String>(
-				getApplicationContext(), android.R.layout.simple_list_item_1);
-		for (int i = 0; i < size; i++) {
+		ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1);
+		for (int i = 0; i < size; i++)
+		{
 			// Code to add choosable elements of ListView
 			adapter.add(eventsToDisplay.get(i).toString());
 		}
 		listView.setAdapter(adapter);
 
-		listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+		listView.setOnItemClickListener(new AdapterView.OnItemClickListener()
+		{
 			@Override
-			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
-					long arg3) {
-				if (listView.isItemChecked(arg2)) {
+			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3)
+			{
+				if (listView.isItemChecked(arg2))
+				{
 					choosedByUserEvents.add(listView.getItemAtPosition(arg2).toString());
 					listView.setItemChecked(arg2, true);
 					arg1.setBackgroundColor(Color.BLACK);
-				} else {
-					arg1.setBackgroundColor(Color.GRAY);
+				} else
+				{
+					arg1.setBackgroundColor(Color.TRANSPARENT);
 					listView.setItemChecked(arg2, false);
 					choosedByUserEvents.remove(listView.getItemAtPosition(arg2).toString());
 				}
 			}
 		});
 
-		//Going setting User Events and going to the next Activity
+		// Going setting User Events and going to the next Activity
 		Button buttonForward = (Button) findViewById(R.id.set_events);
-		buttonForward.setOnClickListener(new OnClickListener() {
+		buttonForward.setOnClickListener(new OnClickListener()
+		{
 
 			@Override
-			public void onClick(View v) {
+			public void onClick(View v)
+			{
 				sport.setUserEvents(choosedByUserEvents);
-				Set<String> userEvents = sport.getUserEvents();
-				List<String> localListOfUserEvents = new ArrayList<String>(userEvents);
-				Intent intent = new Intent(Events.this,Timer.class);
-				intent.putStringArrayListExtra("userEvents",(ArrayList<String>) localListOfUserEvents);
-				startActivity(intent);
+
+				Intent intentMainActivity = getIntent();
+				Bundle bundle;
+				bundle = intentMainActivity.getExtras();
+				if (bundle.getStringArrayList("userEvents") != null)
+				{
+					Set<String> userEventsThis = sport.getUserEvents();
+					ArrayList<String> userEvents = bundle.getStringArrayList("userEvents");
+					userEvents.addAll(userEventsThis);
+					Intent intent = new Intent(Events.this, TimeCounter.class);
+					intent.putStringArrayListExtra("userEvents", userEvents);
+					intent.putExtra("isThreadTimerSet", true);
+					startActivity(intent);
+					finish();
+				}else{
+					Set<String> userEventsThis = sport.getUserEvents();
+					ArrayList<String> localListOfUserEvents = new ArrayList<String>(userEventsThis);
+					Intent intent = new Intent(Events.this, TimeCounter.class);
+					intent.putStringArrayListExtra("userEvents", localListOfUserEvents);
+					startActivity(intent);
+					finish();
+				}
 			}
 		});
 	}
 
 	@Override
-	public void onBackPressed() {
+	public void onBackPressed()
+	{
 		// Write your code here
 		finish();
 		Intent intent = new Intent(Events.this, Choser.class);

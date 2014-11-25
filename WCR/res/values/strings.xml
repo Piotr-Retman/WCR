@@ -5,10 +5,10 @@
     <string name="choose_game">Choose your preferable games</string>
     <string name="history">Learn more about games</string>
     <string name="curiosity">Feed your curiosity</string>
-    <string name="landVersion">Top 10: European Edition</string>
+    <string name="landVersion">Top 1O: European Edition</string>
     <string name="title_activity_chooser">Chooser</string>
     <string name="chooser">Choose your favourite Sports</string>
-    <string name="adder">Add your favourite Sports to Reminder</string>
+    <string name="adder">Add my favourite Sports to Reminder</string>
     <string name="soccer">Soccer</string>
     <string name="volleyball">Volleyball</string>
     <string name="tennis">Tennis</string>
@@ -19,27 +19,37 @@
     <string name="table_tennis">Table Tenis</string>
     <string name="swim">Swimming</string>
     <string name="handball">Handball</string>
-    <string name="soccer_description">        Five main rules and facts of this sport:
-	       1. Eleven gamers in one team
-	       2. 90 minutes of gameplay
-	       3. Yellow and Red Cards as punishment
-	       4. Important moments: penalties,corners,free-kicks and outs.
-	       5. One of the most popular games in the World.	</string>
-    <string name="volleyball_description"></string>
-    <string name="tennis_description"></string>
-    <string name="formula_description"></string>
-    <string name="cycling_description"></string>
-    <string name="ski_jump_description"></string>
-    <string name="figure_skating_description"></string>
-    <string name="table_tennis_description"></string>
-    <string name="swim_description"></string>
-    <string name="handball_description"></string>
-    <string name="version">v.1.0.0</string>
+    <string name="version">v.1.O.O</string>
     <string name="title_activity_know_more">KnowMore</string>
-    <string name="hello_world">Hello world!</string>
     <string name="title_activity_events">Events</string>
     <string name="info">Please choose your games once again!</string>
     <string name="add_dates_to_reminder">Set Events</string>
     <string name="title_activity_timer">Timer</string>
+    <string name="goToMain">Go to main menu</string>
+    <string name="checkMyChosenEvents">Check my chosen Events</string>
+
+    <!-- Alerts -->
+    <string name="messageAlertTitle">Not chosen Events Error</string>
+    <string name="messageAlert">Please choose Events first by clicking on "Choose your preferable games"</string>
+    <string name="messageAlertTitleAddEvent">Error adding Event!</string>
+    <string name="messageAlertAddEvent">Data format is: DD/MM/YYYY. Year must be the same as current or higher.</string>
+    
+    <string name="mainActivityBackPressedTitle">Closing application</string>
+    <string name="mainActivityBackPressedMessage">Do you want to close your application?</string>
+    <string name="mainActivityBackPressedPositiveBtn">Yes</string>
+    <string name="mainActivityBackPressedNegativeBtn">No</string>
+    <!-- End Alerts -->
+
+    <string name="title_activity_add_events">AddEvents</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="my">My</string>
+
+    <!-- Fields to add new Event -->
+    <string name="day">Day:</string>
+    <string name="month">Month:</string>
+    <string name="year">Year:</string>
+    <string name="name_of_event">Name of Event:</string>
+    <string name="add_my_event">Add my Event</string>
+    <!-- End fields to add new Events -->
 
 </resources>

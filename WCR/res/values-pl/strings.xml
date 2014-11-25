@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <string name="app_name">World Championships Reminder</string>
-	<string name="choose_game">Wybierz dyscypliny sportowe</string>
-	<string name="history">Historia i zasady sportów</string>
-	<string name="curiosity">Ciekawostki</string>
-	<string name="landVersion">Top 10: Edycja Europejska</string>
-	<string name="chooser">Wybierz ulubione Sporty do Remindera</string>
-	<string name="adder">Dodaj ulubione Sporty</string>
-	
-	<string name="soccer">Piłka Nożna</string>
+    <string name="choose_game">Wybierz dyscypliny sportowe</string>
+    <string name="history">Historia i zasady sportów</string>
+    <string name="curiosity">Ciekawostki</string>
+    <string name="landVersion">Top 1O: Edycja Europejska</string>
+    <string name="chooser">Wybierz ulubione Sporty do Remindera</string>
+    <string name="adder">Dodaj ulubione Sporty</string>
+    <string name="soccer">Piłka Nożna</string>
     <string name="volleyball">Siatkówka</string>
     <string name="tennis">Tenis Ziemny</string>
     <string name="formula">Formuła 1</string>
@@ -17,26 +17,30 @@
     <string name="figure_skating">Łyżwiarstwo Figurowe</string>
     <string name="table_tennis">Tenis Stołowy</string>
     <string name="swim">Pływanie</string>
-	<string name="handball">Piłka Ręczna</string>
-	
-	<string name="soccer_description">
-	  Pięć najważniejszych faktów:
-	    1. W drużynie gra jedenastu zawodników.
-	    2. Regulaminowy czas gry trwa 90 minut.
-	    3. Żółte i czerwone kartki stanowią karę dla zawodników.
-	    4. Najważniejsze momenty w grze: rzut karny, rzut rożny, rzut wolny, aut.
-	    5. Jeden z najpopularniejszych sportów na świecie.  
-	</string>
-	<string name="volleyball_description"></string>
-	<string name="tennis_description"></string>
-	<string name="formula_description"></string>
-	<string name="cycling_description"></string>
-	<string name="ski_jump_description"></string>
-	<string name="figure_skating_description"></string>
-	<string name="table_tennis_description"></string>
-	<string name="swim_description"></string>
-	<string name="handball_description"></string>
-	
-	<string name="info">Proszę wybierz ponownie swoje Sporty!</string>
-	<string name="add_dates_to_reminder">Ustaw wydarzenia</string>
+    <string name="handball">Piłka Ręczna</string>
+    <string name="info">Proszę wybierz ponownie swoje Sporty!</string>
+    <string name="add_dates_to_reminder">Ustaw wydarzenia</string>
+    <string name="goToMain">Przejdź do menu głównego</string>
+    <string name="checkMyChosenEvents">Sprawdź czas do wybranych wydarzeń</string>
+    <!-- Alerts -->
+    <string name="messageAlertTitle">Nie wybrano żadnego wydarzenia!</string>
+    <string name="messageAlert">Wybierz proszę najpierw wydarzenia sportowe klikając w: "Wybierz dyscypliny sportowe"</string>
+    <string name="messageAlertTitleAddEvent">Błąd dodawania wydarzenia!</string>
+    <string name="messageAlertAddEvent">Format daty: DD/MM/RRRR. Rok musi być większy lub taki sam jak obecny</string>
+    
+    <string name="mainActivityBackPressedTitle">Zamykanie aplikacji</string>
+    <string name="mainActivityBackPressedMessage">Czy na pewno chcesz zamknąć aplikację?</string>
+    <string name="mainActivityBackPressedPositiveBtn">Tak</string>
+    <string name="mainActivityBackPressedNegativeBtn">Nie</string>
+    <!-- End of Alerts -->
+
+    <string name="my">Moje</string>
+    <!-- Fields to add new Event -->
+    <string name="day">Dzień:</string>
+    <string name="month">Miesiąc:</string>
+    <string name="year">Rok:</string>
+    <string name="name_of_event">Wydarzenie:</string>
+    <string name="add_my_event">Dodaj moje wydarzenie</string>
+    <!-- End fields to add new Events -->
+
 </resources>

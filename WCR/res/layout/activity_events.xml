@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context="${relativePackage}.${activityClass}" >
+    tools:context=".Events" >
 
     <Button
         android:id="@+id/set_events"
@@ -16,15 +16,13 @@
         android:text="@string/add_dates_to_reminder" />
 
     <ListView
-        android:id="@+id/listView1"
+        android:id="@+id/list_time"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_above="@+id/set_events"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true" 
-        android:textColor="#fff"
-        android:listSelector="@color/abc_search_url_text_pressed">
-		
+        android:layout_alignParentTop="true" >
+
     </ListView>
 
 </RelativeLayout>

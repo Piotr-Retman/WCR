@@ -1,7 +1,10 @@
 Discipline: Soccer;
-S. World Championships in Russian Federation,Year: 2018, Month: null, Day: null;
+S. World Championships in Russian Federation, Year: 2018, Month: null, Day: null;
 S. European Championships France, Year: 2016, Month: 06, Day: 10;
-S. Copa Libertadores Year: 2015, Month: 12, Day: null;
+S. Copa Libertadores, Year: 2015, Month: 12, Day: null;
 S. AFC Asian Cup, Year: 2015, Month: 01, Day: 09;
+-
+Discipline: My;
+M. Dupa, Year: 2014, Month: 12, Day: 01;
 -
 *
