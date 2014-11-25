@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".AddEvents" >
+
+    <EditText
+        android:id="@+id/dayInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:inputType="number"
+        android:width="100dp" />
+
+    <EditText
+        android:id="@+id/monthInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/dayInput"
+        android:layout_alignBottom="@+id/dayInput"
+        android:layout_toRightOf="@+id/dayInput"
+        android:ems="10"
+        android:inputType="number"
+        android:width="100dp" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/yearInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/monthInput"
+        android:layout_alignBottom="@+id/monthInput"
+        android:layout_toRightOf="@+id/monthInput"
+        android:ems="10"
+        android:inputType="number"
+        android:width="100dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/monthInput"
+        android:layout_alignLeft="@+id/dayInput"
+        android:text="@string/day" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/monthInput"
+        android:layout_alignLeft="@+id/monthInput"
+        android:text="@string/month" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/monthInput"
+        android:layout_toRightOf="@+id/monthInput"
+        android:text="@string/year" />
+
+    <EditText
+        android:id="@+id/nameOfEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dayInput"
+        android:layout_alignRight="@+id/yearInput"
+        android:layout_below="@+id/dayInput"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nameOfEvent"
+        android:layout_below="@+id/dayInput"
+        android:layout_marginTop="14dp"
+        android:text="@string/name_of_event" />
+
+    <Button
+        android:id="@+id/addEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nameOfEvent"
+        android:layout_alignRight="@+id/yearInput"
+        android:layout_below="@+id/nameOfEvent"
+        android:layout_marginTop="84dp"
+        android:text="@string/add_my_event" />
+
+</RelativeLayout>
